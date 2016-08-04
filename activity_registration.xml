@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+         >
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registration"
+                android:layout_gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/uneditText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                android:ems="10" />
+
+            <EditText
+                android:id="@+id/neditText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                  android:hint="name"
+                android:ems="10" />
+
+            <EditText
+                android:id="@+id/peditText3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:hint="password"
+                android:ems="10"
+                android:inputType="textPassword" >
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/geneditText5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:hint="gender"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/addeditText6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/geneditText5"
+        android:layout_alignParentBottom="true"
+          android:hint="address"
+        android:ems="10" /> 
+
+    <EditText
+        android:id="@+id/emeditText7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+          android:hint="emailid"
+        android:layout_alignLeft="@+id/addeditText6"
+        android:layout_alignParentBottom="true"
+      
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+    <EditText
+        android:id="@+id/pheditText8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/scrollView1"
+        android:layout_below="@+id/scrollView1"
+         android:hint="phone no"
+        android:ems="10"
+        android:inputType="phone" />
+
+    <Button
+        android:id="@+id/sbutton1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="sdata"
+        android:text="Submit" />
+
+      </LinearLayout>
+    </ScrollView>
+
+    
+</RelativeLayout>
